@@ -20,4 +20,5 @@ public interface ProdutoRepositorio extends CrudRepository<ProdutoModelo, Intege
 	// Cadastrar/Alterar produto
 	//ProdutoModelo save(ProdutoModelo produto);
 	<ProdMod extends ProdutoModelo> ProdMod save(ProdMod produto);//padrão de cadastro segundo a documentação do spring
+	
 }
