@@ -1,6 +1,5 @@
 package com.api.bibliotecalivros.modelo;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,6 +13,8 @@ public class ProdutoModelo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	
+	private int id;
+	
 	private int codigo;
 	
 	
@@ -21,8 +22,16 @@ public class ProdutoModelo {
 	
 	
 	private double valor;
+
+
 	
 	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public int getCodigo() {
 		return codigo;
 	}
