@@ -11,27 +11,12 @@ import javax.persistence.Table;
 public class ProdutoModelo {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	
-	private int id;
-	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int codigo;
-	
-	
 	private String nome;
-	
-	
 	private double valor;
 
 
-	
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
 	public int getCodigo() {
 		return codigo;
 	}

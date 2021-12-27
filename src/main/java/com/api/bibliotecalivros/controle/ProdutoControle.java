@@ -23,7 +23,7 @@ public @ResponseBody class ProdutoControle {
 	private ProdutoRepositorio acoes;
 	
 	//Listar produtos
-	@RequestMapping(value = "/produtos", method=RequestMethod.GET)
+	@RequestMapping(value ="/produtos", method=RequestMethod.GET)
 	public @ResponseBody List<ProdutoModelo> listar() {
 		return acoes.findAll();
 	}
@@ -35,11 +35,12 @@ public @ResponseBody class ProdutoControle {
 	}
 	
 	//Filtrar produtos
-	@RequestMapping(value = "/produtos/{codigo}", method=RequestMethod.GET)
+	@RequestMapping(value ="/produtos/{codigo}", method=RequestMethod.GET)
 	public @ResponseBody ProdutoModelo filtrar(@PathVariable Integer codigo) {
 		return acoes.findByCodigo(codigo);
 	}
 
+	//Alteração de dados
 	@RequestMapping(value="/produtos", method=RequestMethod.PUT)
 	public @ResponseBody ProdutoModelo alterar(@RequestBody ProdutoModelo produto) {
 		return acoes.save(produto);
