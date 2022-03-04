@@ -31,5 +31,5 @@
     
     Colocar a rota no postman com a requisição GET: http://localhost:8080/api/produtos
     
-- Após a execução desses passos, a api esá pronta para ser usada e eintegrada com uma interface front-end conforme você desejar.
+- Após a execução desses passos, a api esá pronta para ser usada e integrada com uma interface front-end conforme você desejar.
    
