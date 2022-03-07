@@ -14,14 +14,14 @@ public class ProdutoModelo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	
+	@Column(name = "codigo")
 	private int codigo;
 	
-	
+	@Column(name = "nome")
 	private String nome;
 	
-	
+	@Column(name = "valor")
 	private double valor;
-	
 	
 	public int getCodigo() {
 		return codigo;

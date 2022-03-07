@@ -12,7 +12,7 @@ public interface ProdutoRepositorio extends CrudRepository<ProdutoModelo, Intege
 	List<ProdutoModelo>findAll();
 	
 	//Pesquisar por codigo
-	ProdutoModelo findByCodigo(int codigo);//a função findBy percorre a coluna que tem o nóme código e depois procura o parâmetro que foi repassado.
+	ProdutoModelo findByCodigo(int codigo);//a função findBy percorre a coluna que tem o nome código e depois procura o parâmetro que foi repassado.
 	
 	//Remover o produto
 	void delete(ProdutoModelo produto);
